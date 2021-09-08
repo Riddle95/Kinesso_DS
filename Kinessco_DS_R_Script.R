@@ -75,7 +75,7 @@ totalmeansumofsq_sales <- sum(anova(fit.sales)[,3])
 df_ss$contribution <- round((df_ss$ss_each / totalmeansumofsq_sales)*100)
 Total_sales_values <- colSums(toy_sales_data['sales'])
 df_ss$contributionindollar <- (df_ss$contribution/100)*Total_sales_values
-df_ss['contributionindollar',2]
+
 # Q.6. Return on Investment for TV Spend
 TV_spend_RoI <- ((df_ss[2,4] - colSums(toy_sales_data['tv_spend']))/colSums(toy_sales_data['tv_spend']))*100
 
